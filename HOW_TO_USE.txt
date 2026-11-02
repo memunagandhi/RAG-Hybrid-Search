@@ -1,0 +1,128 @@
+================================================================================
+AI-POWERED SEO KEYWORD & CONTENT INTELLIGENCE TOOL - COMPLETE USER GUIDE
+================================================================================
+
+App Live URL: https://rag-hybrid-search.streamlit.app/
+GitHub Repo:  https://github.com/memunagandhi/RAG-Hybrid-Search
+
+--------------------------------------------------------------------------------
+1. STATUS CHECK (SUB BARABAR HAI?)
+--------------------------------------------------------------------------------
+Haanji, aapka tool 100% perfectly active aur barabar kaam kar raha hai!
+- Streamlit Cloud par successfully live deploy ho chuka hai.
+- ChromaDB vector store + BM25 keyword matching dono properly configured hain.
+- 25 Curated SEO Best Practice documents knowledge base me loaded hain.
+- Dark theme UI, SERP preview, Heading H1-H6 outline, aur live keyword density
+  checker sab seamlessly working hain.
+
+
+--------------------------------------------------------------------------------
+2. STEP-BY-STEP USE KAISE KAREIN?
+--------------------------------------------------------------------------------
+
+STEP 1: LINK OPEN KAREIN
+Open in your browser: https://rag-hybrid-search.streamlit.app/
+
+STEP 2: SIDEBAR SETTINGS (LEFT SIDE)
+- LLM Provider: 
+  Default me "Mock Engine (Instant / Offline)" set hai. 
+  Iska sabse bada fayda ye hai ki BINA KISI API KEY ke bhi aapka tool
+  100% instantly chalega!
+  (Agar aapko live OpenAI ya Groq use karna ho, toh dropdown se select karke
+  apni API key paste kar sakte hain).
+- Brand / Site Name:
+  Apni website ya brand ka naam likhein (Jaise: "MG Wix" ya "RankMaster").
+- Knowledge Base Status:
+  Yahan 25 indexed SEO rules aur unki categories visible hoti hain.
+
+STEP 3: SEED KEYWORD / TOPIC ENTER KAREIN
+Main search bar me apna topic type karein, jaise:
+- wix website design services
+- technical seo checklist
+- best running shoes for flat feet
+- core web vitals optimization
+(Ya fir search bar ke niche diye gaye 4 Quick Preset buttons par click karein).
+
+STEP 4: "GENERATE SEO BRIEF" BUTTON DABAYEIN
+Button click karte hi backend me:
+1. BM25 (exact keyword) + ChromaDB (vector embeddings) search hogi.
+2. 6-Line Reciprocal Rank Fusion (RRF) dono results ko balance karke merge karega.
+3. Cosine re-ranking top context filter karegi.
+4. Structured Brief aur metrics cards generate ho jayenge.
+
+
+--------------------------------------------------------------------------------
+3. CHARO TABS KA MATLAB AUR KAISE SAMAJHEIN
+--------------------------------------------------------------------------------
+
+TAB 1: SEARCH INTENT & OVERVIEW
+- Intent Classification: Batata hai ki user ka maqsad kya hai:
+  * Informational (Sikhna/Janna chahta hai)
+  * Commercial (Review/Compare kar raha hai)
+  * Transactional (Direct buy/hire/order karna chahta hai)
+  * Navigational (Khas brand/login search kar raha hai)
+- Content Strategy Recommendations: Guide karta hai ki kitne words ka content
+  hona chahiye aur format kya ho.
+- Featured Snippet Opportunity: Google me "Position Zero" (Featured Snippet)
+  paane ke liye 40-60 words ka answer kaise likhein.
+- Grounding Knowledge Base: Dikhata hai ki kaun se SEO rules is brief ke liye use hue.
+
+TAB 2: META TAGS & TITLE PREVIEW
+- Live Google SERP Dark Mode Mockup:
+  Ye dikhata hai ki Google search result me aapka page kaisa dikhega!
+- Meta Title: Strictly 55-60 characters range me rehta hai taaki Google search me
+  title aadha na kate (...). Primary keyword hamesha pehle hota hai.
+- Meta Description: Strictly 150-170 characters me rehta hai, active voice me
+  likha hota hai aur explicit Call-to-Action (CTA) shamil hota hai.
+
+TAB 3: ON-PAGE H1-H6 STRUCTURE
+- SEO Rule: Har page par SIRF EK H1 tag hona chahiye.
+- Ye tab page ka main H1 tag deta hai, sath me structured H2 aur H3 headings
+  deta hai jisme LSI keywords distributed hote hain.
+- Is outline ko copy karke aap directly apne page par use kar sakte hain.
+
+TAB 4: LSI KEYWORDS & DENSITY ANALYSIS
+- LSI Keywords: Google jin semantically related words ko prefer karta hai.
+- Live Content Draft Editor:
+  Yahan aap apna koi bhi article ya paragraph likh/paste kar sakte hain.
+- Live Density Table:
+  Target Range: 1.0% se 5.0%
+  * Agar safe zone me hai: [OPTIMAL] green badge aayega.
+  * Agar keyword 5% se zyada repeat ho raha hai: [KEYWORD STUFFING ALERT] red
+    badge aayega taaki aap Google penalty se bach sakein.
+
+
+--------------------------------------------------------------------------------
+4. EXPORT AUR COPY ACTIONS
+--------------------------------------------------------------------------------
+- "Export Markdown" button: Pura SEO brief .md format me download ho jata hai.
+- "Copy All" popover: 1-click me pura brief copy karke apne CMS/WordPress/Wix me
+  paste kar sakte hain.
+
+
+--------------------------------------------------------------------------------
+5. APNI WEBSITE (JAISE MGWIX.ONLINE) KE LIYE BEST USES
+--------------------------------------------------------------------------------
+1. Apne Services Pages ke Meta Title & Description fix karein taaki Google me CTR
+   (click-through rate) badhe.
+2. Har page par sirf single H1 tag aur structured H2/H3 hierarchy follow karein.
+3. Blog post likhne se pehle tool se outline generate karein.
+4. Article likhte waqt Tab 4 me paste karke check karein ki keyword stuffing na ho.
+
+
+--------------------------------------------------------------------------------
+6. STANDALONE PYTHON ENGINE (TERMINAL ME CHALANE KE LIYE)
+--------------------------------------------------------------------------------
+Agar bina browser ke direct terminal se chalana ho:
+Command:
+    python seo_rag_engine.py
+
+Dusre python file me import karne ke liye:
+    from seo_rag_engine import generate_seo_brief
+    brief = generate_seo_brief("wix seo optimization", brand="MG Wix")
+    print(brief["structured_brief"])
+
+================================================================================
+Generated on: 2026-11-02
+Saved locally in your project folder.
+================================================================================
