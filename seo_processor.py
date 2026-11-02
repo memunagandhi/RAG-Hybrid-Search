@@ -274,15 +274,16 @@ def generate_heuristic_seo_data(seed_keyword: str, brand: str = "SEOPro", rag_co
         ]
     }
 
-    # 5. Generate a balanced sample content draft for keyword density analysis
+    # 5. Generate a balanced sample content draft for keyword density analysis (target: 1-5% optimal range)
     sample_text = (
-        f"When developing an organic growth strategy, mastering {kw} is essential. "
-        f"Implementing proven {kw} best practices ensures that both search engines and users find value. "
-        f"First, align your content format with the search intent for {kw} to capture qualified visitors. "
-        f"Applying practical {kw} optimization tips directly impacts core engagement signals and SERP visibility. "
-        f"Furthermore, understanding key {kw} ranking factors helps your team prioritize technical updates and internal linking. "
-        f"Always run a comprehensive {kw} audit checklist before publishing new assets to prevent indexing gaps. "
-        f"By maintaining this structured framework, your {kw} performance will steadily improve over time."
+        f"When developing an organic growth strategy, mastering {kw} is essential for securing competitive SERP visibility. "
+        f"Modern search algorithms heavily prioritize semantic depth, user experience signals, and technical execution. "
+        f"Implementing proven best practices ensures that your site architecture delivers measurable value to visitors. "
+        f"First, align your content format with user search intent to capture qualified organic traffic effectively. "
+        f"Applying actionable optimization tips directly strengthens click-through rates and average time-on-page. "
+        f"Furthermore, understanding key ranking factors helps teams prioritize structured data, mobile responsiveness, and internal linking. "
+        f"Before launching new pages, always conduct a thorough audit checklist to prevent indexation gaps or canonical errors. "
+        f"By following this balanced framework, your approach to {kw} will achieve lasting topical authority and sustainable organic growth."
     )
 
     all_kws = [kw] + lsi_keywords
